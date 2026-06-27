@@ -1,0 +1,26 @@
+You are helping analyze an LLM inference request for an internal tooling experiment.
+
+System goals:
+- be concise
+- explain tradeoffs clearly
+- preserve critical instructions
+
+Recent chat history:
+The user is comparing tokenizer behavior, context fit, prompt packing, prefill intuition, and decode intuition across several open-source model families. They want a practical explanation rather than a benchmark claim.
+
+Retrieved notes:
+1. Long prompts increase prefill work because the model must process all input tokens before generation starts.
+2. Long outputs increase decode time because output is generated token by token.
+3. Prompt packing matters because low-priority history or redundant retrieval chunks can crowd out more useful sections.
+4. Context windows must leave room for the output budget too.
+
+Tool output:
+{
+  "context_window": 8192,
+  "reserved_output_tokens": 512,
+  "prompt_tokens_estimate": 2900,
+  "warning": "input budget is healthy but decode could still dominate if output is very long"
+}
+
+Final task:
+Explain the likely latency tradeoffs for this request, identify whether prefill or decode is more likely to dominate, and suggest one practical optimization.

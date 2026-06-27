@@ -1,0 +1,4 @@
+model_name,prompt_token_count,generated_token_count,num_runs,avg_ttft_seconds,p50_ttft_seconds,p95_ttft_seconds,p99_ttft_seconds,avg_decode_wall_seconds,p50_decode_wall_seconds,p95_decode_wall_seconds,p99_decode_wall_seconds,avg_total_latency_seconds,p50_total_latency_seconds,p95_total_latency_seconds,p99_total_latency_seconds,avg_prefill_seconds,avg_decode_model_seconds,avg_output_tokens_per_second
+gemma3:4b,270,309,50,8.9836,10.2929,10.6479,10.964,10.0869,10.0748,10.4546,10.5935,19.0705,20.4125,21.1021,21.261,0.1353,10.083,30.6657
+mistral:instruct,293,349,50,15.7807,15.7919,17.3566,17.7907,15.3665,15.2088,16.007,16.6661,31.1472,31.4392,32.6013,34.3167,0.314,15.364,22.7367
+qwen3:4b,250,512,50,14.6749,15.9753,16.7185,18.0767,18.1117,16.1471,37.7427,38.265,32.7866,32.2642,38.3147,47.3805,0.0746,18.1091,30.3737

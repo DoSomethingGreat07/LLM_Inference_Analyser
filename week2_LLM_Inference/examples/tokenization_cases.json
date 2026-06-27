@@ -1,0 +1,44 @@
+{
+  "cases": [
+    {
+      "category": "simple English sentence",
+      "text": "Hello, I am learning how tokenizers break text into model-readable pieces."
+    },
+    {
+      "category": "long English paragraph",
+      "text": "Large language model inference starts long before text generation. A tokenizer first converts raw text into smaller vocabulary units, and those token choices affect cost, context usage, and latency. Even when two models read the same sentence, their tokenizers may split code, punctuation, and multilingual text differently, which changes how much work the model needs to do."
+    },
+    {
+      "category": "Python code",
+      "text": "def estimate_cost(tokens, price_per_million=0.15):\n    total = (tokens / 1_000_000) * price_per_million\n    return round(total, 6)"
+    },
+    {
+      "category": "JSON payload",
+      "text": "{\"model\":\"qwen2.5\",\"prompt_tokens\":128,\"decode_tokens\":64,\"use_cache\":true,\"metadata\":{\"team\":\"infra\",\"env\":\"dev\"}}"
+    },
+    {
+      "category": "SQL query",
+      "text": "SELECT model_name, AVG(latency_ms) AS avg_latency FROM inference_logs WHERE status = 'success' GROUP BY model_name ORDER BY avg_latency ASC;"
+    },
+    {
+      "category": "numbers-heavy text",
+      "text": "Batch sizes 1, 4, 8, 16, 32 and 64 produced latencies of 122.5ms, 98.1ms, 87.4ms, 84.2ms, 83.9ms and 91.7ms on 2026-06-22."
+    },
+    {
+      "category": "punctuation-heavy text",
+      "text": "Wait... what?! --- tokenizers split: commas, colons; braces { }, brackets [ ], slashes /, backslashes \\\\, and quotes '\"' in surprising ways."
+    },
+    {
+      "category": "emoji-heavy text",
+      "text": "The launch looked great 🚀🔥, but the logs were noisy 😅📉 and the retry loop kept spinning 🔁🤖 until the queue recovered ✅."
+    },
+    {
+      "category": "Telugu sentence",
+      "text": "నేను ఎల్ ఎల్ ఎం ఇన్‌ఫరెన్స్ గురించి నేర్చుకుంటున్నాను, అందుకే టోకెనైజేషన్‌ని పరిశీలిస్తున్నాను."
+    },
+    {
+      "category": "extra spaces and newlines",
+      "text": "Prompt packing can change counts.\n\nThis line has extra spaces.    This part has tabs\t\tand uneven spacing."
+    }
+  ]
+}

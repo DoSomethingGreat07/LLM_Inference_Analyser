@@ -1,0 +1,32 @@
+{
+  "prompts": [
+    {
+      "prompt_name": "short user question",
+      "text": "What is the difference between tokenization and a context window in large language model inference?"
+    },
+    {
+      "prompt_name": "long essay prompt",
+      "text": "Write a detailed essay explaining how inference works in large language models. Cover tokenization, context windows, prompt structure, prefill, decode, batching, KV cache reuse, latency tradeoffs, and cost awareness. Use simple language, give practical examples, and compare how short prompts and long prompts use the context window differently. Also explain why engineers need to reserve room for output tokens before sending a prompt to a model."
+    },
+    {
+      "prompt_name": "code debugging prompt",
+      "text": "You are helping debug a Python script. The script loads a tokenizer, counts tokens, and then fails with an index error when processing a long prompt.\n\nTraceback:\nIndexError: list index out of range\nFile \"context.py\", line 41, in analyze_prompt\n\nPlease explain the likely cause, identify edge cases, and suggest a safe fix."
+    },
+    {
+      "prompt_name": "RAG-style prompt with multiple chunks",
+      "text": "Question: Summarize the infrastructure tradeoffs in this retrieval set.\n\nChunk 1: Tokenization converts raw text into model vocabulary units, which directly affects context usage and cost.\n\nChunk 2: Retrieval-augmented generation often appends several chunks, so context windows can fill quickly even before the model generates an answer.\n\nChunk 3: Engineers must reserve output tokens, or a prompt that barely fits may fail at runtime.\n\nChunk 4: Long chat history, tool results, JSON, and code snippets can all increase token count faster than expected.\n\nAnswer using only the retrieved information."
+    },
+    {
+      "prompt_name": "chat history prompt",
+      "text": "System: You are a helpful assistant for LLM infrastructure learning.\nUser: Explain tokenization in simple terms.\nAssistant: Tokenization breaks text into smaller pieces called tokens.\nUser: Why do token counts matter for cost?\nAssistant: Providers charge and limit usage by tokens, not by words.\nUser: Now explain how context windows and reserved output tokens interact in a chat setting."
+    },
+    {
+      "prompt_name": "JSON/tool-calling prompt",
+      "text": "{\n  \"system\": \"You are a tool-using assistant.\",\n  \"tool_schema\": {\n    \"name\": \"search_docs\",\n    \"arguments\": {\n      \"query\": \"string\",\n      \"top_k\": \"integer\"\n    }\n  },\n  \"user_request\": \"Find three notes about context windows, output reservation, and prompt size.\",\n  \"constraints\": [\"Return valid JSON only\", \"Do not exceed the available context\"]\n}"
+    },
+    {
+      "prompt_name": "multilingual prompt",
+      "text": "Explain tokenization and context windows in English first, then give a short Telugu explanation: టోకెనైజేషన్ అంటే ఏమిటి? కాంటెక్స్ట్ విండో ఎందుకు ముఖ్యం?"
+    }
+  ]
+}

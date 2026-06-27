@@ -1,0 +1,7 @@
+venv/
+week2_llm_inf/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+outputs/benchmark_runs/

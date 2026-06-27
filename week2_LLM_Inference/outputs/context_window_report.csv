@@ -1,0 +1,190 @@
+prompt_name,tokenizer_name,character_count,word_count,prompt_token_count,reserved_output_tokens,context_window,total_required_tokens,remaining_tokens,context_used_percent,fits_context_window
+multilingual prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,153,21,163,1024,4096,1187,2909,28.9795,TRUE
+RAG-style prompt with multiple chunks,TinyLlama/TinyLlama-1.1B-Chat-v1.0,600,89,144,1024,4096,1168,2928,28.5156,TRUE
+RAG-style prompt with multiple chunks,mistralai/Mistral-7B-Instruct-v0.2,600,89,139,1024,4096,1163,2933,28.3936,TRUE
+multilingual prompt,mistralai/Mistral-7B-Instruct-v0.2,153,21,124,1024,4096,1148,2948,28.0273,TRUE
+RAG-style prompt with multiple chunks,Qwen/Qwen2.5-1.5B-Instruct,600,89,119,1024,4096,1143,2953,27.9053,TRUE
+multilingual prompt,Qwen/Qwen2.5-1.5B-Instruct,153,21,109,1024,4096,1133,2963,27.6611,TRUE
+JSON/tool-calling prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,357,43,108,1024,4096,1132,2964,27.6367,TRUE
+JSON/tool-calling prompt,mistralai/Mistral-7B-Instruct-v0.2,357,43,108,1024,4096,1132,2964,27.6367,TRUE
+long essay prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,447,66,92,1024,4096,1116,2980,27.2461,TRUE
+JSON/tool-calling prompt,Qwen/Qwen2.5-1.5B-Instruct,357,43,90,1024,4096,1114,2982,27.1973,TRUE
+long essay prompt,mistralai/Mistral-7B-Instruct-v0.2,447,66,90,1024,4096,1114,2982,27.1973,TRUE
+chat history prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,388,59,85,1024,4096,1109,2987,27.0752,TRUE
+chat history prompt,mistralai/Mistral-7B-Instruct-v0.2,388,59,84,1024,4096,1108,2988,27.0508,TRUE
+long essay prompt,Qwen/Qwen2.5-1.5B-Instruct,447,66,83,1024,4096,1107,2989,27.0264,TRUE
+code debugging prompt,mistralai/Mistral-7B-Instruct-v0.2,322,52,80,1024,4096,1104,2992,26.9531,TRUE
+code debugging prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,322,52,80,1024,4096,1104,2992,26.9531,TRUE
+chat history prompt,Qwen/Qwen2.5-1.5B-Instruct,388,59,75,1024,4096,1099,2997,26.8311,TRUE
+code debugging prompt,Qwen/Qwen2.5-1.5B-Instruct,322,52,72,1024,4096,1096,3000,26.7578,TRUE
+short user question,mistralai/Mistral-7B-Instruct-v0.2,99,15,18,1024,4096,1042,3054,25.4395,TRUE
+short user question,TinyLlama/TinyLlama-1.1B-Chat-v1.0,99,15,17,1024,4096,1041,3055,25.415,TRUE
+short user question,Qwen/Qwen2.5-1.5B-Instruct,99,15,17,1024,4096,1041,3055,25.415,TRUE
+multilingual prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,153,21,163,512,4096,675,3421,16.4795,TRUE
+RAG-style prompt with multiple chunks,TinyLlama/TinyLlama-1.1B-Chat-v1.0,600,89,144,512,4096,656,3440,16.0156,TRUE
+RAG-style prompt with multiple chunks,mistralai/Mistral-7B-Instruct-v0.2,600,89,139,512,4096,651,3445,15.8936,TRUE
+multilingual prompt,mistralai/Mistral-7B-Instruct-v0.2,153,21,124,512,4096,636,3460,15.5273,TRUE
+RAG-style prompt with multiple chunks,Qwen/Qwen2.5-1.5B-Instruct,600,89,119,512,4096,631,3465,15.4053,TRUE
+multilingual prompt,Qwen/Qwen2.5-1.5B-Instruct,153,21,109,512,4096,621,3475,15.1611,TRUE
+JSON/tool-calling prompt,mistralai/Mistral-7B-Instruct-v0.2,357,43,108,512,4096,620,3476,15.1367,TRUE
+JSON/tool-calling prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,357,43,108,512,4096,620,3476,15.1367,TRUE
+long essay prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,447,66,92,512,4096,604,3492,14.7461,TRUE
+long essay prompt,mistralai/Mistral-7B-Instruct-v0.2,447,66,90,512,4096,602,3494,14.6973,TRUE
+JSON/tool-calling prompt,Qwen/Qwen2.5-1.5B-Instruct,357,43,90,512,4096,602,3494,14.6973,TRUE
+chat history prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,388,59,85,512,4096,597,3499,14.5752,TRUE
+chat history prompt,mistralai/Mistral-7B-Instruct-v0.2,388,59,84,512,4096,596,3500,14.5508,TRUE
+long essay prompt,Qwen/Qwen2.5-1.5B-Instruct,447,66,83,512,4096,595,3501,14.5264,TRUE
+multilingual prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,153,21,163,1024,8192,1187,7005,14.4897,TRUE
+code debugging prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,322,52,80,512,4096,592,3504,14.4531,TRUE
+code debugging prompt,mistralai/Mistral-7B-Instruct-v0.2,322,52,80,512,4096,592,3504,14.4531,TRUE
+chat history prompt,Qwen/Qwen2.5-1.5B-Instruct,388,59,75,512,4096,587,3509,14.3311,TRUE
+code debugging prompt,Qwen/Qwen2.5-1.5B-Instruct,322,52,72,512,4096,584,3512,14.2578,TRUE
+RAG-style prompt with multiple chunks,TinyLlama/TinyLlama-1.1B-Chat-v1.0,600,89,144,1024,8192,1168,7024,14.2578,TRUE
+RAG-style prompt with multiple chunks,mistralai/Mistral-7B-Instruct-v0.2,600,89,139,1024,8192,1163,7029,14.1968,TRUE
+multilingual prompt,mistralai/Mistral-7B-Instruct-v0.2,153,21,124,1024,8192,1148,7044,14.0137,TRUE
+RAG-style prompt with multiple chunks,Qwen/Qwen2.5-1.5B-Instruct,600,89,119,1024,8192,1143,7049,13.9526,TRUE
+multilingual prompt,Qwen/Qwen2.5-1.5B-Instruct,153,21,109,1024,8192,1133,7059,13.8306,TRUE
+JSON/tool-calling prompt,mistralai/Mistral-7B-Instruct-v0.2,357,43,108,1024,8192,1132,7060,13.8184,TRUE
+JSON/tool-calling prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,357,43,108,1024,8192,1132,7060,13.8184,TRUE
+long essay prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,447,66,92,1024,8192,1116,7076,13.623,TRUE
+long essay prompt,mistralai/Mistral-7B-Instruct-v0.2,447,66,90,1024,8192,1114,7078,13.5986,TRUE
+JSON/tool-calling prompt,Qwen/Qwen2.5-1.5B-Instruct,357,43,90,1024,8192,1114,7078,13.5986,TRUE
+chat history prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,388,59,85,1024,8192,1109,7083,13.5376,TRUE
+chat history prompt,mistralai/Mistral-7B-Instruct-v0.2,388,59,84,1024,8192,1108,7084,13.5254,TRUE
+long essay prompt,Qwen/Qwen2.5-1.5B-Instruct,447,66,83,1024,8192,1107,7085,13.5132,TRUE
+code debugging prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,322,52,80,1024,8192,1104,7088,13.4766,TRUE
+code debugging prompt,mistralai/Mistral-7B-Instruct-v0.2,322,52,80,1024,8192,1104,7088,13.4766,TRUE
+chat history prompt,Qwen/Qwen2.5-1.5B-Instruct,388,59,75,1024,8192,1099,7093,13.4155,TRUE
+code debugging prompt,Qwen/Qwen2.5-1.5B-Instruct,322,52,72,1024,8192,1096,7096,13.3789,TRUE
+short user question,mistralai/Mistral-7B-Instruct-v0.2,99,15,18,512,4096,530,3566,12.9395,TRUE
+short user question,TinyLlama/TinyLlama-1.1B-Chat-v1.0,99,15,17,512,4096,529,3567,12.915,TRUE
+short user question,Qwen/Qwen2.5-1.5B-Instruct,99,15,17,512,4096,529,3567,12.915,TRUE
+short user question,mistralai/Mistral-7B-Instruct-v0.2,99,15,18,1024,8192,1042,7150,12.7197,TRUE
+short user question,TinyLlama/TinyLlama-1.1B-Chat-v1.0,99,15,17,1024,8192,1041,7151,12.7075,TRUE
+short user question,Qwen/Qwen2.5-1.5B-Instruct,99,15,17,1024,8192,1041,7151,12.7075,TRUE
+multilingual prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,153,21,163,256,4096,419,3677,10.2295,TRUE
+RAG-style prompt with multiple chunks,TinyLlama/TinyLlama-1.1B-Chat-v1.0,600,89,144,256,4096,400,3696,9.7656,TRUE
+RAG-style prompt with multiple chunks,mistralai/Mistral-7B-Instruct-v0.2,600,89,139,256,4096,395,3701,9.6436,TRUE
+multilingual prompt,mistralai/Mistral-7B-Instruct-v0.2,153,21,124,256,4096,380,3716,9.2773,TRUE
+RAG-style prompt with multiple chunks,Qwen/Qwen2.5-1.5B-Instruct,600,89,119,256,4096,375,3721,9.1553,TRUE
+multilingual prompt,Qwen/Qwen2.5-1.5B-Instruct,153,21,109,256,4096,365,3731,8.9111,TRUE
+JSON/tool-calling prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,357,43,108,256,4096,364,3732,8.8867,TRUE
+JSON/tool-calling prompt,mistralai/Mistral-7B-Instruct-v0.2,357,43,108,256,4096,364,3732,8.8867,TRUE
+long essay prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,447,66,92,256,4096,348,3748,8.4961,TRUE
+JSON/tool-calling prompt,Qwen/Qwen2.5-1.5B-Instruct,357,43,90,256,4096,346,3750,8.4473,TRUE
+long essay prompt,mistralai/Mistral-7B-Instruct-v0.2,447,66,90,256,4096,346,3750,8.4473,TRUE
+chat history prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,388,59,85,256,4096,341,3755,8.3252,TRUE
+chat history prompt,mistralai/Mistral-7B-Instruct-v0.2,388,59,84,256,4096,340,3756,8.3008,TRUE
+long essay prompt,Qwen/Qwen2.5-1.5B-Instruct,447,66,83,256,4096,339,3757,8.2764,TRUE
+multilingual prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,153,21,163,512,8192,675,7517,8.2397,TRUE
+code debugging prompt,mistralai/Mistral-7B-Instruct-v0.2,322,52,80,256,4096,336,3760,8.2031,TRUE
+code debugging prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,322,52,80,256,4096,336,3760,8.2031,TRUE
+chat history prompt,Qwen/Qwen2.5-1.5B-Instruct,388,59,75,256,4096,331,3765,8.0811,TRUE
+code debugging prompt,Qwen/Qwen2.5-1.5B-Instruct,322,52,72,256,4096,328,3768,8.0078,TRUE
+RAG-style prompt with multiple chunks,TinyLlama/TinyLlama-1.1B-Chat-v1.0,600,89,144,512,8192,656,7536,8.0078,TRUE
+RAG-style prompt with multiple chunks,mistralai/Mistral-7B-Instruct-v0.2,600,89,139,512,8192,651,7541,7.9468,TRUE
+multilingual prompt,mistralai/Mistral-7B-Instruct-v0.2,153,21,124,512,8192,636,7556,7.7637,TRUE
+RAG-style prompt with multiple chunks,Qwen/Qwen2.5-1.5B-Instruct,600,89,119,512,8192,631,7561,7.7026,TRUE
+multilingual prompt,Qwen/Qwen2.5-1.5B-Instruct,153,21,109,512,8192,621,7571,7.5806,TRUE
+JSON/tool-calling prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,357,43,108,512,8192,620,7572,7.5684,TRUE
+JSON/tool-calling prompt,mistralai/Mistral-7B-Instruct-v0.2,357,43,108,512,8192,620,7572,7.5684,TRUE
+long essay prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,447,66,92,512,8192,604,7588,7.373,TRUE
+JSON/tool-calling prompt,Qwen/Qwen2.5-1.5B-Instruct,357,43,90,512,8192,602,7590,7.3486,TRUE
+long essay prompt,mistralai/Mistral-7B-Instruct-v0.2,447,66,90,512,8192,602,7590,7.3486,TRUE
+chat history prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,388,59,85,512,8192,597,7595,7.2876,TRUE
+chat history prompt,mistralai/Mistral-7B-Instruct-v0.2,388,59,84,512,8192,596,7596,7.2754,TRUE
+long essay prompt,Qwen/Qwen2.5-1.5B-Instruct,447,66,83,512,8192,595,7597,7.2632,TRUE
+code debugging prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,322,52,80,512,8192,592,7600,7.2266,TRUE
+code debugging prompt,mistralai/Mistral-7B-Instruct-v0.2,322,52,80,512,8192,592,7600,7.2266,TRUE
+chat history prompt,Qwen/Qwen2.5-1.5B-Instruct,388,59,75,512,8192,587,7605,7.1655,TRUE
+code debugging prompt,Qwen/Qwen2.5-1.5B-Instruct,322,52,72,512,8192,584,7608,7.1289,TRUE
+short user question,mistralai/Mistral-7B-Instruct-v0.2,99,15,18,256,4096,274,3822,6.6895,TRUE
+short user question,Qwen/Qwen2.5-1.5B-Instruct,99,15,17,256,4096,273,3823,6.665,TRUE
+short user question,TinyLlama/TinyLlama-1.1B-Chat-v1.0,99,15,17,256,4096,273,3823,6.665,TRUE
+short user question,mistralai/Mistral-7B-Instruct-v0.2,99,15,18,512,8192,530,7662,6.4697,TRUE
+short user question,Qwen/Qwen2.5-1.5B-Instruct,99,15,17,512,8192,529,7663,6.4575,TRUE
+short user question,TinyLlama/TinyLlama-1.1B-Chat-v1.0,99,15,17,512,8192,529,7663,6.4575,TRUE
+multilingual prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,153,21,163,256,8192,419,7773,5.1147,TRUE
+RAG-style prompt with multiple chunks,TinyLlama/TinyLlama-1.1B-Chat-v1.0,600,89,144,256,8192,400,7792,4.8828,TRUE
+RAG-style prompt with multiple chunks,mistralai/Mistral-7B-Instruct-v0.2,600,89,139,256,8192,395,7797,4.8218,TRUE
+multilingual prompt,mistralai/Mistral-7B-Instruct-v0.2,153,21,124,256,8192,380,7812,4.6387,TRUE
+RAG-style prompt with multiple chunks,Qwen/Qwen2.5-1.5B-Instruct,600,89,119,256,8192,375,7817,4.5776,TRUE
+multilingual prompt,Qwen/Qwen2.5-1.5B-Instruct,153,21,109,256,8192,365,7827,4.4556,TRUE
+JSON/tool-calling prompt,mistralai/Mistral-7B-Instruct-v0.2,357,43,108,256,8192,364,7828,4.4434,TRUE
+JSON/tool-calling prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,357,43,108,256,8192,364,7828,4.4434,TRUE
+long essay prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,447,66,92,256,8192,348,7844,4.248,TRUE
+long essay prompt,mistralai/Mistral-7B-Instruct-v0.2,447,66,90,256,8192,346,7846,4.2236,TRUE
+JSON/tool-calling prompt,Qwen/Qwen2.5-1.5B-Instruct,357,43,90,256,8192,346,7846,4.2236,TRUE
+chat history prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,388,59,85,256,8192,341,7851,4.1626,TRUE
+chat history prompt,mistralai/Mistral-7B-Instruct-v0.2,388,59,84,256,8192,340,7852,4.1504,TRUE
+long essay prompt,Qwen/Qwen2.5-1.5B-Instruct,447,66,83,256,8192,339,7853,4.1382,TRUE
+code debugging prompt,mistralai/Mistral-7B-Instruct-v0.2,322,52,80,256,8192,336,7856,4.1016,TRUE
+code debugging prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,322,52,80,256,8192,336,7856,4.1016,TRUE
+chat history prompt,Qwen/Qwen2.5-1.5B-Instruct,388,59,75,256,8192,331,7861,4.0405,TRUE
+code debugging prompt,Qwen/Qwen2.5-1.5B-Instruct,322,52,72,256,8192,328,7864,4.0039,TRUE
+multilingual prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,153,21,163,1024,32768,1187,31581,3.6224,TRUE
+RAG-style prompt with multiple chunks,TinyLlama/TinyLlama-1.1B-Chat-v1.0,600,89,144,1024,32768,1168,31600,3.5645,TRUE
+RAG-style prompt with multiple chunks,mistralai/Mistral-7B-Instruct-v0.2,600,89,139,1024,32768,1163,31605,3.5492,TRUE
+multilingual prompt,mistralai/Mistral-7B-Instruct-v0.2,153,21,124,1024,32768,1148,31620,3.5034,TRUE
+RAG-style prompt with multiple chunks,Qwen/Qwen2.5-1.5B-Instruct,600,89,119,1024,32768,1143,31625,3.4882,TRUE
+multilingual prompt,Qwen/Qwen2.5-1.5B-Instruct,153,21,109,1024,32768,1133,31635,3.4576,TRUE
+JSON/tool-calling prompt,mistralai/Mistral-7B-Instruct-v0.2,357,43,108,1024,32768,1132,31636,3.4546,TRUE
+JSON/tool-calling prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,357,43,108,1024,32768,1132,31636,3.4546,TRUE
+long essay prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,447,66,92,1024,32768,1116,31652,3.4058,TRUE
+long essay prompt,mistralai/Mistral-7B-Instruct-v0.2,447,66,90,1024,32768,1114,31654,3.3997,TRUE
+JSON/tool-calling prompt,Qwen/Qwen2.5-1.5B-Instruct,357,43,90,1024,32768,1114,31654,3.3997,TRUE
+chat history prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,388,59,85,1024,32768,1109,31659,3.3844,TRUE
+chat history prompt,mistralai/Mistral-7B-Instruct-v0.2,388,59,84,1024,32768,1108,31660,3.3813,TRUE
+long essay prompt,Qwen/Qwen2.5-1.5B-Instruct,447,66,83,1024,32768,1107,31661,3.3783,TRUE
+code debugging prompt,mistralai/Mistral-7B-Instruct-v0.2,322,52,80,1024,32768,1104,31664,3.3691,TRUE
+code debugging prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,322,52,80,1024,32768,1104,31664,3.3691,TRUE
+chat history prompt,Qwen/Qwen2.5-1.5B-Instruct,388,59,75,1024,32768,1099,31669,3.3539,TRUE
+code debugging prompt,Qwen/Qwen2.5-1.5B-Instruct,322,52,72,1024,32768,1096,31672,3.3447,TRUE
+short user question,mistralai/Mistral-7B-Instruct-v0.2,99,15,18,256,8192,274,7918,3.3447,TRUE
+short user question,Qwen/Qwen2.5-1.5B-Instruct,99,15,17,256,8192,273,7919,3.3325,TRUE
+short user question,TinyLlama/TinyLlama-1.1B-Chat-v1.0,99,15,17,256,8192,273,7919,3.3325,TRUE
+short user question,mistralai/Mistral-7B-Instruct-v0.2,99,15,18,1024,32768,1042,31726,3.1799,TRUE
+short user question,TinyLlama/TinyLlama-1.1B-Chat-v1.0,99,15,17,1024,32768,1041,31727,3.1769,TRUE
+short user question,Qwen/Qwen2.5-1.5B-Instruct,99,15,17,1024,32768,1041,31727,3.1769,TRUE
+multilingual prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,153,21,163,512,32768,675,32093,2.0599,TRUE
+RAG-style prompt with multiple chunks,TinyLlama/TinyLlama-1.1B-Chat-v1.0,600,89,144,512,32768,656,32112,2.002,TRUE
+RAG-style prompt with multiple chunks,mistralai/Mistral-7B-Instruct-v0.2,600,89,139,512,32768,651,32117,1.9867,TRUE
+multilingual prompt,mistralai/Mistral-7B-Instruct-v0.2,153,21,124,512,32768,636,32132,1.9409,TRUE
+RAG-style prompt with multiple chunks,Qwen/Qwen2.5-1.5B-Instruct,600,89,119,512,32768,631,32137,1.9257,TRUE
+multilingual prompt,Qwen/Qwen2.5-1.5B-Instruct,153,21,109,512,32768,621,32147,1.8951,TRUE
+JSON/tool-calling prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,357,43,108,512,32768,620,32148,1.8921,TRUE
+JSON/tool-calling prompt,mistralai/Mistral-7B-Instruct-v0.2,357,43,108,512,32768,620,32148,1.8921,TRUE
+long essay prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,447,66,92,512,32768,604,32164,1.8433,TRUE
+long essay prompt,mistralai/Mistral-7B-Instruct-v0.2,447,66,90,512,32768,602,32166,1.8372,TRUE
+JSON/tool-calling prompt,Qwen/Qwen2.5-1.5B-Instruct,357,43,90,512,32768,602,32166,1.8372,TRUE
+chat history prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,388,59,85,512,32768,597,32171,1.8219,TRUE
+chat history prompt,mistralai/Mistral-7B-Instruct-v0.2,388,59,84,512,32768,596,32172,1.8188,TRUE
+long essay prompt,Qwen/Qwen2.5-1.5B-Instruct,447,66,83,512,32768,595,32173,1.8158,TRUE
+code debugging prompt,mistralai/Mistral-7B-Instruct-v0.2,322,52,80,512,32768,592,32176,1.8066,TRUE
+code debugging prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,322,52,80,512,32768,592,32176,1.8066,TRUE
+chat history prompt,Qwen/Qwen2.5-1.5B-Instruct,388,59,75,512,32768,587,32181,1.7914,TRUE
+code debugging prompt,Qwen/Qwen2.5-1.5B-Instruct,322,52,72,512,32768,584,32184,1.7822,TRUE
+short user question,mistralai/Mistral-7B-Instruct-v0.2,99,15,18,512,32768,530,32238,1.6174,TRUE
+short user question,TinyLlama/TinyLlama-1.1B-Chat-v1.0,99,15,17,512,32768,529,32239,1.6144,TRUE
+short user question,Qwen/Qwen2.5-1.5B-Instruct,99,15,17,512,32768,529,32239,1.6144,TRUE
+multilingual prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,153,21,163,256,32768,419,32349,1.2787,TRUE
+RAG-style prompt with multiple chunks,TinyLlama/TinyLlama-1.1B-Chat-v1.0,600,89,144,256,32768,400,32368,1.2207,TRUE
+RAG-style prompt with multiple chunks,mistralai/Mistral-7B-Instruct-v0.2,600,89,139,256,32768,395,32373,1.2054,TRUE
+multilingual prompt,mistralai/Mistral-7B-Instruct-v0.2,153,21,124,256,32768,380,32388,1.1597,TRUE
+RAG-style prompt with multiple chunks,Qwen/Qwen2.5-1.5B-Instruct,600,89,119,256,32768,375,32393,1.1444,TRUE
+multilingual prompt,Qwen/Qwen2.5-1.5B-Instruct,153,21,109,256,32768,365,32403,1.1139,TRUE
+JSON/tool-calling prompt,mistralai/Mistral-7B-Instruct-v0.2,357,43,108,256,32768,364,32404,1.1108,TRUE
+JSON/tool-calling prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,357,43,108,256,32768,364,32404,1.1108,TRUE
+long essay prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,447,66,92,256,32768,348,32420,1.062,TRUE
+JSON/tool-calling prompt,Qwen/Qwen2.5-1.5B-Instruct,357,43,90,256,32768,346,32422,1.0559,TRUE
+long essay prompt,mistralai/Mistral-7B-Instruct-v0.2,447,66,90,256,32768,346,32422,1.0559,TRUE
+chat history prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,388,59,85,256,32768,341,32427,1.0406,TRUE
+chat history prompt,mistralai/Mistral-7B-Instruct-v0.2,388,59,84,256,32768,340,32428,1.0376,TRUE
+long essay prompt,Qwen/Qwen2.5-1.5B-Instruct,447,66,83,256,32768,339,32429,1.0345,TRUE
+code debugging prompt,TinyLlama/TinyLlama-1.1B-Chat-v1.0,322,52,80,256,32768,336,32432,1.0254,TRUE
+code debugging prompt,mistralai/Mistral-7B-Instruct-v0.2,322,52,80,256,32768,336,32432,1.0254,TRUE
+chat history prompt,Qwen/Qwen2.5-1.5B-Instruct,388,59,75,256,32768,331,32437,1.0101,TRUE
+code debugging prompt,Qwen/Qwen2.5-1.5B-Instruct,322,52,72,256,32768,328,32440,1.001,TRUE
+short user question,mistralai/Mistral-7B-Instruct-v0.2,99,15,18,256,32768,274,32494,0.8362,TRUE
+short user question,Qwen/Qwen2.5-1.5B-Instruct,99,15,17,256,32768,273,32495,0.8331,TRUE
+short user question,TinyLlama/TinyLlama-1.1B-Chat-v1.0,99,15,17,256,32768,273,32495,0.8331,TRUE

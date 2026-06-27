@@ -1,0 +1,6 @@
+Hello, I am learning LLM infrastructure.
+LLM infra, GPU batching, and KV-cache optimization are core inference topics.
+C++/CUDA kernels can reduce latency, but memory bandwidth is still a bottleneck.
+Transformers tokenize emojis 😀, URLs https://example.com, and emails test@example.com differently.
+The API returned 429 errors at 10:45 p.m. on 06/22/2026, so we retried with exponential backoff.
+Mixed text like snake_case, camelCase, JSON {"model":"qwen","tokens":128}, and version v2.1.0 is useful for testing.

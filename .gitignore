@@ -1,0 +1,8 @@
+week_llm_inf/
+week2_LLM_Inference/week2_llm_inf/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.rocketride/
+week2_LLM_Inference/outputs/benchmark_runs/
