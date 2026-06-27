@@ -308,7 +308,7 @@ If `decode_wall_seconds` and `decode_model_seconds` are very close, most decode 
 - Benchmark when the machine is not under heavy load.
 - Do not compare models unless hardware and generation settings are kept consistent.
 
-## Relationship to the rest of Week 2
+
 
 This repository includes both simulated and real measurement work.
 
