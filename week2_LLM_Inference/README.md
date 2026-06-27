@@ -22,6 +22,14 @@ This folder covers the input side of LLM inference: how raw text becomes tokens,
 - `src/inference_analyzer.py`: combine tokenization, context, prefill, and decode into one simulation
 - `src/ollama_real_benchmark.py`: run real local measurements against Ollama models
 
+## Deployment Files
+
+- `Dockerfile`: container image for the benchmark runner
+- `docker-compose.yml`: Ollama server plus benchmark runner workflow
+- `docker/benchmark-entrypoint.sh`: waits for Ollama and starts the benchmark
+- `docker/pull-models.sh`: helper script for pulling models into the Ollama volume
+- `requirements-benchmark.txt`: lightweight dependency set for the benchmark container
+
 ## Example Inputs
 
 - `examples/sample_texts.txt`
@@ -39,7 +47,9 @@ This folder covers the input side of LLM inference: how raw text becomes tokens,
 - `outputs/decode_estimation_report.csv`
 - `outputs/full_inference_analysis.csv`
 - `outputs/full_inference_analysis_compare.csv`
+- `outputs/real_benchmark_runs.csv`
 - `outputs/real_benchmark_summary.csv`
+- `outputs/real_benchmark_summary.json`
 - `outputs/benchmark_runs/`: archived real benchmark runs
 
 ## Suggested Learning Order
@@ -117,6 +127,12 @@ docker compose run --rm benchmark \
 ```
 
 The benchmark outputs will be written into `outputs/` on the host machine.
+
+If you want to verify the Docker Ollama server before running the benchmark:
+
+```bash
+curl http://localhost:11434/api/tags
+```
 
 ## Key Takeaways
 

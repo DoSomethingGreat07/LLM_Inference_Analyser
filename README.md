@@ -14,6 +14,8 @@ It captures:
 
 The repository started as part of a Week 2 LLM Infrastructure learning journey covering tokenization, context windows, prompt packing, prefill, and decode. It now extends that work into real local inference benchmarking with Ollama-served models such as `qwen3:4b`, `mistral:instruct`, and `gemma3:4b`.
 
+Both a local Python workflow and a Docker-based workflow are available for the real benchmark path.
+
 ## Why this project matters
 
 LLM inference optimization is not just about getting a response eventually. Users care about how quickly the first token appears and how steadily the rest of the output arrives. Those two phases are often influenced by different factors.
@@ -142,13 +144,20 @@ LLM_Inference_cost_Latency_analyser/
 ├── README.md
 ├── week2_LLM_Inference/
 │   ├── README.md
+│   ├── .dockerignore
+│   ├── Dockerfile
+│   ├── docker-compose.yml
 │   ├── requirements.txt
+│   ├── requirements-benchmark.txt
 │   ├── examples/
 │   │   ├── context_examples.json
 │   │   ├── full_prompt_example.txt
 │   │   ├── prompt_sections.json
 │   │   ├── sample_texts.txt
 │   │   └── tokenization_cases.json
+│   ├── docker/
+│   │   ├── benchmark-entrypoint.sh
+│   │   └── pull-models.sh
 │   ├── notebooks/
 │   │   ├── 01_tokenizer_setup.ipynb
 │   │   ├── 02_tokenization_behavior_lab.ipynb
@@ -221,6 +230,24 @@ week2_LLM_Inference/week2_llm_inf/bin/python week2_LLM_Inference/src/ollama_real
   --output-tag qwen_short_run
 ```
 
+Run the same benchmark with Docker:
+
+```bash
+cd week2_LLM_Inference
+docker compose up -d ollama
+docker compose exec ollama ollama pull qwen3:4b
+docker compose exec ollama ollama pull mistral:instruct
+docker compose exec ollama ollama pull gemma3:4b
+docker compose run --rm benchmark \
+  --prompt-file examples/full_prompt_example.txt \
+  --models qwen3:4b mistral:instruct gemma3:4b \
+  --num-predict 512 \
+  --num-runs 50 \
+  --warmup-runs 3 \
+  --temperature 0 \
+  --output-tag docker_512tok_run
+```
+
 ## Input prompt
 
 The current real benchmark uses:
@@ -248,6 +275,8 @@ The broader Week 2 project also contains CSV reports and figures from the simula
 
 - `week2_LLM_Inference/outputs/`
 - `week2_LLM_Inference/outputs/figures/`
+
+Docker benchmark runs write into the same `outputs/` directory on the host through a bind mount.
 
 ## Metrics captured per run
 
