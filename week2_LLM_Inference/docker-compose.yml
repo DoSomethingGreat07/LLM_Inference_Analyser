@@ -1,0 +1,47 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: week2-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 15s
+      timeout: 10s
+      retries: 20
+
+  model-puller:
+    image: ollama/ollama:latest
+    container_name: week2-ollama-model-puller
+    depends_on:
+      ollama:
+        condition: service_healthy
+    entrypoint: ["/bin/sh", "/workspace/docker/pull-models.sh"]
+    working_dir: /workspace
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    volumes:
+      - ./:/workspace
+      - ollama_data:/root/.ollama
+    profiles: ["setup"]
+
+  benchmark:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: week2-llm-benchmark
+    depends_on:
+      ollama:
+        condition: service_healthy
+    environment:
+      OLLAMA_API_URL: http://ollama:11434/api/generate
+      WAIT_TIMEOUT_SECONDS: 180
+    volumes:
+      - ./outputs:/app/outputs
+      - ./examples:/app/examples:ro
+    working_dir: /app
+
+volumes:
+  ollama_data:

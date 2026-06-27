@@ -84,6 +84,40 @@ week2_LLM_Inference/week2_llm_inf/bin/python week2_LLM_Inference/src/ollama_real
   --output-tag week2_final_512tok
 ```
 
+## Docker Workflow
+
+The repository now includes a Docker-based benchmark path for real local inference.
+
+Start the Ollama server container:
+
+```bash
+cd week2_LLM_Inference
+docker compose up -d ollama
+```
+
+Pull the benchmark models into the Ollama volume:
+
+```bash
+docker compose exec ollama ollama pull qwen3:4b
+docker compose exec ollama ollama pull mistral:instruct
+docker compose exec ollama ollama pull gemma3:4b
+```
+
+Run the benchmark container:
+
+```bash
+docker compose run --rm benchmark \
+  --prompt-file examples/full_prompt_example.txt \
+  --models qwen3:4b mistral:instruct gemma3:4b \
+  --num-predict 512 \
+  --num-runs 50 \
+  --warmup-runs 3 \
+  --temperature 0 \
+  --output-tag docker_512tok_run
+```
+
+The benchmark outputs will be written into `outputs/` on the host machine.
+
 ## Key Takeaways
 
 - Token count changes by tokenizer even for the same text

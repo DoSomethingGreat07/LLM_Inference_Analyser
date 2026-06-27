@@ -1,0 +1,9 @@
+week2_llm_inf/
+outputs/benchmark_runs/
+outputs/*.csv
+outputs/*.json
+outputs/figures/
+notebooks/
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,6 +1,7 @@
 import argparse
 import csv
 import json
+import os
 import statistics
 import time
 from datetime import datetime
@@ -22,7 +23,7 @@ DEFAULT_MODELS = [
     "mistral:instruct",
     "gemma3:4b",
 ]
-OLLAMA_URL = "http://127.0.0.1:11434/api/generate"
+DEFAULT_OLLAMA_URL = os.environ.get("OLLAMA_API_URL", "http://127.0.0.1:11434/api/generate")
 
 
 def compute_percentile(values, percentile):
@@ -51,7 +52,7 @@ def load_prompt(prompt_text=None, prompt_file=None):
     return EXAMPLE_PROMPT_PATH.read_text(encoding="utf-8")
 
 
-def stream_generate(model_name, prompt, num_predict, temperature):
+def stream_generate(model_name, prompt, num_predict, temperature, api_url):
     """Send one streaming generation request to Ollama and measure timings."""
     payload = {
         "model": model_name,
@@ -68,7 +69,7 @@ def stream_generate(model_name, prompt, num_predict, temperature):
     finished_at = None
     final_chunk = None
 
-    with requests.post(OLLAMA_URL, json=payload, stream=True, timeout=300) as response:
+    with requests.post(api_url, json=payload, stream=True, timeout=300) as response:
         response.raise_for_status()
 
         for line in response.iter_lines():
@@ -114,14 +115,14 @@ def stream_generate(model_name, prompt, num_predict, temperature):
     }
 
 
-def benchmark_model(model_name, prompt, num_predict, num_runs, warmup_runs, temperature):
+def benchmark_model(model_name, prompt, num_predict, num_runs, warmup_runs, temperature, api_url):
     """Benchmark one model across warmup and measured runs."""
     for _ in range(warmup_runs):
-        stream_generate(model_name, prompt, num_predict, temperature)
+        stream_generate(model_name, prompt, num_predict, temperature, api_url)
 
     runs = []
     for run_index in range(1, num_runs + 1):
-        result = stream_generate(model_name, prompt, num_predict, temperature)
+        result = stream_generate(model_name, prompt, num_predict, temperature, api_url)
         result["model_name"] = model_name
         result["run_index"] = run_index
         runs.append(result)
@@ -236,6 +237,7 @@ def build_arg_parser():
     parser.add_argument("--num-runs", type=int, default=10, help="Measured runs per model.")
     parser.add_argument("--warmup-runs", type=int, default=1, help="Warmup runs per model.")
     parser.add_argument("--temperature", type=float, default=0.0, help="Sampling temperature for generation.")
+    parser.add_argument("--api-url", type=str, default=DEFAULT_OLLAMA_URL, help="Streaming generate endpoint URL.")
     parser.add_argument("--output-tag", type=str, help="Optional folder name for archived benchmark outputs.")
     return parser
 
@@ -258,6 +260,7 @@ def main():
             num_runs=args.num_runs,
             warmup_runs=args.warmup_runs,
             temperature=args.temperature,
+            api_url=args.api_url,
         )
         all_runs.extend(runs)
         summaries.append(summarize_runs(model_name, runs))
